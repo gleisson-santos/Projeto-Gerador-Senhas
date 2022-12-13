@@ -64,3 +64,36 @@ input:focus {
   margin-bottom: 1rem;
   font-size: 2.2rem;
 }
+
+#register-form p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.form-control input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.6rem 0;
+}
+
+#generate-password {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#generate-password:hover {
+  color: #0097ff;
+}
