@@ -14,7 +14,17 @@ body {
 }
 
 html {
-  background: linear-gradient(180deg, #ea02ff 0%, #0097ff 100%);
+  background: #108dc7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ef8e38,
+    #108dc7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ef8e38,
+    #108dc7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 input:focus {
@@ -43,7 +53,7 @@ input:focus {
 }
 
 #banner-layer {
-  background-color: rgba(25, 11, 122, 0.7);
+  background-color: rgba(10, 25, 70, 0.7);
   height: 100%;
   padding: 2rem;
   display: flex;
@@ -112,7 +122,7 @@ input:focus {
   color: #333;
   text-align: center;
   margin-bottom: 1rem;
-  display: none;
+  /* display: none; */
 }
 
 #register-form #generated-password p {
@@ -120,11 +130,13 @@ input:focus {
   margin-top: 0.5rem;
 }
 
-#register-form input[type='submit'] {
+#register-form input[type='submit'],
+#generate-options button,
+#copy-password {
   background-color: #81d340;
   color: #fff;
-  border: none;
   opacity: 0.8;
+  border: none;
   border-radius: 2rem;
   padding: 1rem 1.4rem;
   max-width: 150px;
@@ -135,4 +147,17 @@ input:focus {
 
 #register-form input[type='submit']:hover {
   opacity: 2;
+}
+
+/* Segunda versão */
+#generate-options {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+#generate-options .form-control {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
