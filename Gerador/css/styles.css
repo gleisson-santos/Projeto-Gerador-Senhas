@@ -30,6 +30,11 @@ input:focus {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+#register-container h1 {
+  margin-left: 7%;
+  margin-top: -25%;
+}
+
 #register-banner {
   background-image: url('../image/bg-form.jpg');
   background-size: cover;
@@ -95,5 +100,39 @@ input:focus {
 }
 
 #generate-password:hover {
-  color: #0097ff;
+  color: #0099ff;
+}
+
+#register-form #generated-password {
+  border: 1px solid #0099ff;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#register-form #generated-password p {
+  color: #81d340;
+  margin-top: 0.5rem;
+}
+
+#register-form input[type='submit'] {
+  background-color: #81d340;
+  color: #fff;
+  border: none;
+  opacity: 0.8;
+  border-radius: 2rem;
+  padding: 1rem 1.4rem;
+  max-width: 150px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: 0.4s;
+}
+
+#register-form input[type='submit']:hover {
+  opacity: 2;
 }
