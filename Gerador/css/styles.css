@@ -194,3 +194,29 @@ input:focus {
 .hide {
   display: none;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer h3 {
+  font-size: 15px;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+#foo a {
+  padding: 0.3rem;
+  font-size: 20px;
+}
+
+.fa-brands {
+  color: #ddd;
+}
+
+.fa-brands:hover {
+  color: #333;
+}
